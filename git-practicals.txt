@@ -1,2 +1,3 @@
 first git commit
 second git add
+commit message
