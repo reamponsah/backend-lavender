@@ -35,7 +35,7 @@ def deposit_money():
         if amount > 0:
             balance += amount
             transaction_history.append(f"Deposit - {amount:.2f}")
-            print(f"{amount:.2f} successfully deposited in your account.\nYour current balance is  {balance + amount:.2f} ")
+            print(f"{amount:.2f} successfully deposited in your account.\nYour current balance is  {balance:.2f} ")
         else:
             print("Amount must be positive")
     except ValueError:
@@ -51,7 +51,7 @@ def withdraw_money():
         elif amount < balance:
             balance -= amount
             transaction_history.append(f"Withdrawal - {amount:.2f}")
-            print(f"{amount:.2f} was withdrawn from your account. Your remaining balance is {balance - amount:.2f}")
+            print(f"{amount:.2f} was withdrawn from your account. Your remaining balance is {balance:.2f}")
     except ValueError:
         print("Invalid Input! Enter a valid amount")        
     
